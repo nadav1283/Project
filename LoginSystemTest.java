@@ -1,37 +1,51 @@
-import jeliot.io.*;
 import java.util.Scanner;
 
-public class LoginMain {
+public class TI {
+    public static void main(String[] args) {
 
-public static void main(String[] args) {
+        String UsernameO;
+        String PasswordO;
+        String UsernameT;
+        String PasswordT;
 
-    String Username;
-    String Password;
+        Scanner input1 = new Scanner(System.in);
+        System.out.println("What do you want you'r username to be?");
+        UsernameO = input1.next();
 
-    Password = "Nadav2004";
-    Username = "Nadav1283";
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("What do you want you'r password to be?");
+        PasswordO = input2.next();
 
-    Scanner input1 = new Scanner(System.in);
-    System.out.println("Enter Username : ");
-    String username = input1.next();
+        PasswordT = "Nadav2004";
+        UsernameT = "Nadav1283";
 
-    Scanner input2 = new Scanner(System.in);
-    System.out.println("Enter Password : ");
-    String password = input2.next();
+        if ((PasswordT == PasswordO)||(UsernameT == UsernameO)){
 
-    if (username.equals(Username) && password.equals(Password)) {
+            System.out.println("Invalid username or password, try again");
+            return;
+        }
 
-        System.out.println("Access Granted! Welcome!");
-    }
+        Scanner input3 = new Scanner(System.in);
+        System.out.println("Enter Username : ");
+        String username = input3.next();
 
-    else if (username.equals(Username)) {
-        System.out.println("Invalid Password!");
-    } else if (password.equals(Password)) {
-        System.out.println("Invalid Username!");
-    } else {
-        System.out.println("Invalid Username & Password!");
+        Scanner input4 = new Scanner(System.in);
+        System.out.println("Enter Password : ");
+        String password = input4.next();
+
+        if (username.equals(UsernameT) && password.equals(PasswordT)) {
+
+            System.out.println("Access Granted! Welcome!");
+        }
+
+        else if (username.equals(UsernameT)) {
+            System.out.println("Invalid Password!");
+        } else if (password.equals(PasswordT)) {
+            System.out.println("Invalid Username!");
+        } else {
+            System.out.println("Invalid Username & Password!");
+        }
+
     }
 
 }
-
-} 
