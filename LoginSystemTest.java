@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TI {
+public class FPLS {
     public static void main(String[] args) {
 
         //Strings + Integers + Booleans
@@ -14,6 +14,7 @@ public class TI {
         int CodeN;
         boolean AccountYN;
 
+        //Default Information
         UsernameO = "username2";
         PasswordO = "password2";
         CodeO = "2004";
@@ -95,7 +96,7 @@ public class TI {
             }
 
             if (AccountYN = true) {
-                //Login System //Check for Security Questions problems
+                //Login System
                 Scanner input8 = new Scanner(System.in);
                 System.out.println("Login: ");
                 System.out.println("Username: ");
