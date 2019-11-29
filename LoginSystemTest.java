@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FPLS {
+public class TI {
     public static void main(String[] args) {
 
         //Strings + Integers + Booleans
@@ -12,7 +12,6 @@ public class FPLS {
         String PasswordT;
         String AccountA;
         int CodeN;
-        int Verify;
         boolean AccountYN;
 
         UsernameO = "username2";
@@ -46,7 +45,7 @@ public class FPLS {
                 }
             }
 
-            if (AccountYN = false) {
+            if (AccountYN == false) {
                 //SignUp Info
                 Scanner input1 = new Scanner(System.in);
                 System.out.println("SignUp: ");
