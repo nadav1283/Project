@@ -1,0 +1,50 @@
+import jeliot.io.*;
+
+public class Point{
+
+	//Constants
+    final double DEFAULT_X = 0;
+    final double DEFAULT_Y = 0;
+
+	//Attributes
+	private double x;
+	private double y;
+	
+	//Constructor
+	public Point(double x, double y){
+		this.setX(x);	
+		this.setY(y);
+	}
+	
+	public void setX(double x){
+		return this.x;
+	}
+	public void setY(double y){
+		return this.y;
+	}
+	public double getX(){
+		this.x = x;
+	}
+	public double getY(){
+		this.y = y;
+	}
+
+}
+
+public class Line {
+	
+	Point point1;
+	Point point2;
+	
+	public Line(Point point1, Point point2){
+	this.point1 = point1;
+	this.point2 = point2;
+	}
+}
+
+public class MyClass {
+    public static void main() {
+        // Your algorithm goes here.
+
+    }
+}
